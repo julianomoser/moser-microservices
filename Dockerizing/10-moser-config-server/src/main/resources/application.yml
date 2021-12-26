@@ -1,0 +1,15 @@
+server:
+  port: 8888
+spring:
+  application:
+    name: moser-config-server
+  cloud:
+    config:
+      server:
+        git:
+          uri: https://github.com/julianomoser/moser-config-server
+          username: julianomoser
+          password: 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
+          default-label: main
+          search-paths:
+            - 'greeting-service*'
